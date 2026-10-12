@@ -1,0 +1,19 @@
+{
+  "scenarioKinds": [
+    {
+      "id": "primary",
+      "name": "Primary",
+      "description": "Established successful outcomes."
+    },
+    {
+      "id": "validation",
+      "name": "Validation / refusal",
+      "description": "Input, identity, scope or eligibility refusal."
+    },
+    {
+      "id": "edge",
+      "name": "Edge",
+      "description": "Conflict, dependency, failure and partial outcomes."
+    }
+  ]
+}

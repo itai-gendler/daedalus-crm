@@ -1,0 +1,64 @@
+---
+{
+  "appliesTo": [
+    {
+      "type": "entity",
+      "id": "follow-up",
+      "effect": "creates",
+      "contexts": [
+        {
+          "place": "crm-desktop::crm::conversation"
+        },
+        {
+          "place": "crm-desktop::crm::follow-ups"
+        },
+        {
+          "place": "crm-web::crm::conversation"
+        },
+        {
+          "place": "crm-web::crm::follow-ups"
+        }
+      ]
+    }
+  ],
+  "permits": [
+    {
+      "actors": [
+        "crm-admin",
+        "crm-manager",
+        "crm-sales"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/team-scope.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/auth.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/app/(app)/settings/actions.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/mcp/tools.ts"
+    }
+  ]
+}
+---
+
+# Only CRM administrators, sales managers and salespeople may create 跟进记录
+
+This Rule governs create operations on 跟进记录 at crm-desktop::crm::conversation, crm-desktop::crm::follow-ups, crm-web::crm::conversation and crm-web::crm::follow-ups.
+
+The selected operation can pass through any one of these grants:
+
+- CRM administrators, sales managers and salespeople.

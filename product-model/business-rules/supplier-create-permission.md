@@ -1,0 +1,58 @@
+---
+{
+  "appliesTo": [
+    {
+      "type": "entity",
+      "id": "supplier",
+      "effect": "creates",
+      "contexts": [
+        {
+          "place": "crm-desktop::crm::signing"
+        },
+        {
+          "place": "crm-web::crm::signing"
+        }
+      ]
+    }
+  ],
+  "permits": [
+    {
+      "actors": [
+        "crm-admin",
+        "crm-manager",
+        "crm-sales"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/team-scope.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/auth.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/app/(app)/settings/actions.ts"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "src/lib/mcp/tools.ts"
+    }
+  ]
+}
+---
+
+# Only CRM administrators, sales managers and salespeople may create 供应商
+
+This Rule governs create operations on 供应商 at crm-desktop::crm::signing and crm-web::crm::signing.
+
+The selected operation can pass through any one of these grants:
+
+- CRM administrators, sales managers and salespeople.
