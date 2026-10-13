@@ -20,9 +20,10 @@
   ],
   "limitations": [
     "AI proposals require explicit human acceptance before CRM writes.",
-    "The gateway provides its implemented OpenAI-compatible subset.",
-    "Subscription payment references need separate operations activation.",
-    "Native server mode opens the chosen site."
+    "AI runs only when a person asks; loading a page never calls the model.",
+    "Imports recognize an existing customer by phone number and only skip it or fill its empty fields, never overwrite it.",
+    "Referral attribution is fixed when a customer is entered; later upstream changes do not rewrite it.",
+    "Subscription payment references are recorded for operations staff to activate; no payment is collected automatically."
   ]
 }
 ---
