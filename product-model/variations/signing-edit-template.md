@@ -42,4 +42,4 @@
 
 # Signing Edit Template
 
-The existing configuration selects the supported actor input path described by these alternatives.
+General sales teams edit a signing's amount, date and currency; export (trade) teams also edit its order information. Each workspace's template picks the form its team uses.

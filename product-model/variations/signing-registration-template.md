@@ -42,4 +42,4 @@
 
 # Signing Registration Template
 
-The existing configuration selects the supported actor input path described by these alternatives.
+General sales teams record a signing with its amount, date and currency; export (trade) teams also record order information, which creates a lightweight order. Each workspace's template picks the form its team uses.

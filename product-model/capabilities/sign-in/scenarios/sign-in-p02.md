@@ -17,7 +17,7 @@
       }
     },
     {
-      "text": "Hosted membership enters workspace. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.",
+      "text": "Hosted membership enters workspace. The Cloud Account’s credentials are checked, and the member enters the first 工作区 their Workspace Membership opens in a new session; other workspaces are reached from the in-app workspace menu.",
       "kind": "product",
       "entities": [
         {
@@ -93,4 +93,4 @@ A CRM member invokes sign in for the case “Hosted membership enters workspace�
 
 ## Outcome
 
-Hosted membership enters workspace. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.
+Hosted membership enters workspace. The Cloud Account’s credentials are checked, and the member enters the first 工作区 their Workspace Membership opens in a new session; other workspaces are reached from the in-app workspace menu.

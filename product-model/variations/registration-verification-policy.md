@@ -52,4 +52,4 @@
 
 # Registration Verification Policy
 
-The existing configuration selects the supported actor input path described by these alternatives.
+A deployment without a code-sending channel lets people register straight away; once a channel is set up, it can require a verification code that proves the contact is theirs. Both registrations are supported, and each deployment picks one.

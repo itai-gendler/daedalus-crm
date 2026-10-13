@@ -7,6 +7,28 @@
   },
   "steps": [
     {
+      "text": "The native client’s retained Data mode is Local, so its settings offer connecting to a chosen server.",
+      "kind": "condition",
+      "entities": [
+        {
+          "entity": "desktop-config",
+          "effect": "reads",
+          "facts": [
+            "Data mode"
+          ]
+        }
+      ],
+      "actor": "crm-sales",
+      "contexts": {
+        "dp": {
+          "place": "crm-desktop::public::server-connection"
+        },
+        "da": {
+          "place": "crm-desktop::crm::desktop-settings"
+        }
+      }
+    },
+    {
       "text": "A CRM member invokes change desktop settings for the case “Connect chosen server from local settings”.",
       "kind": "actor",
       "entities": [],
@@ -21,7 +43,7 @@
       }
     },
     {
-      "text": "Connect chosen server from local settings. Native server connection takes a validated address; return-local works without signing into the chosen site and reopens the owned local book. Reminder preferences/test notification stay in local settings.",
+      "text": "The validated server address is retained and the native client connects to the chosen server. Reminder preferences and the test notification stay in local settings.",
       "kind": "product",
       "entities": [
         {
@@ -89,4 +111,4 @@ A CRM member invokes change desktop settings for the case “Connect chosen serv
 
 ## Outcome
 
-Connect chosen server from local settings. Native server connection takes a validated address; return-local works without signing into the chosen site and reopens the owned local book. Reminder preferences/test notification stay in local settings.
+The validated server address is retained and the native client connects to the chosen server. Reminder preferences and the test notification stay in local settings.

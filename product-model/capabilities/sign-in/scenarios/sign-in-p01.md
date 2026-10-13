@@ -17,7 +17,7 @@
       }
     },
     {
-      "text": "Selfhost credentials enter CRM. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.",
+      "text": "Selfhost credentials enter CRM. The login and password are checked against an active Crm Account in this deployment’s own store, and the member enters the CRM in a new session.",
       "kind": "product",
       "entities": [
         {
@@ -76,4 +76,4 @@ A CRM member invokes sign in for the case “Selfhost credentials enter CRM”.
 
 ## Outcome
 
-Selfhost credentials enter CRM. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.
+Selfhost credentials enter CRM. The login and password are checked against an active Crm Account in this deployment’s own store, and the member enters the CRM in a new session.

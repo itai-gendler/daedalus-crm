@@ -17,7 +17,7 @@
       }
     },
     {
-      "text": "Desktop cloud login switches owned data. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.",
+      "text": "Desktop cloud login switches owned data. The Cloud Account’s credentials are exchanged for a 登录设备 token. A different account switches the native client to that account’s own local book, without writing to the previous one; the same account enters as the book’s local administrator.",
       "kind": "product",
       "entities": [
         {
@@ -99,4 +99,4 @@ A CRM member invokes sign in for the case “Desktop cloud login switches owned 
 
 ## Outcome
 
-Desktop cloud login switches owned data. Credentials are checked in the deployment identity store. Hosted membership selects the workspace; native cloud login selects only the account-owned local directory. Rejected or unavailable identity never adopts another account’s files.
+Desktop cloud login switches owned data. The Cloud Account’s credentials are exchanged for a 登录设备 token. A different account switches the native client to that account’s own local book, without writing to the previous one; the same account enters as the book’s local administrator.

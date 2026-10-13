@@ -42,4 +42,4 @@
 
 # Winning Registration Template
 
-The existing configuration selects the supported actor input path described by these alternatives.
+General sales teams may mark an opportunity won with or without registering a signing; export (trade) teams continue from the win into a signing that produces an order. Each workspace's template picks the continuation its team uses.
